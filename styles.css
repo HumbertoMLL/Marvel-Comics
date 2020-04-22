@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald&display=swap');
 
 body {
   margin: 0;
@@ -7,16 +7,134 @@ body {
 
 .header {
   width: 100%;
-  height: 100%;
+  height: 6em;
+  background-color:#202020;
 }
+
+.header__links {
+  width: 100%;
+  height: 3.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #393939;
+  /* padding-top: .25em; */
+}
+
+
+.header__links--left {
+  color: white;
+  height: 3.2em;
+  display: flex;
+  align-items: center;
+  border-left:  1px solid #393939;
+  border-right:  1px solid #393939;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-left: 9em;
+  margin-right: 8em;
+}
+.header__links--left  a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 15px;
+  letter-spacing: 2px;
+
+}
+
+
+.header__links--left span {
+  color: white;
+  font-size: 15px;
+  margin-left: .4em;
+  margin-right: .4em;
+  margin-top: .5em;
+}
+.header__links--left-img {
+  fill:#fff;
+}
+.header__links--left-img svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.header__links--logo{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-right: 2em;
+}
+
+.header__links--pays {
+  display: flex;
+  height: 3.2em;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__links--card-div {
+  height: 3.2em;
+  border-left:  1px solid #393939;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex ;
+  align-items: center;
+}
+.header__links--search-div {
+  height: 3.2em;
+  border-left:  1px solid #393939;
+  border-right:  1px solid #393939;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex ;
+  align-items: center;
+}
+
+.header__links--card {
+  display: flex ;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Oswald';
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+.header__links--card img{
+  width: 5em;
+  height: 3.5em;
+}
+.header__links--search{
+}
+.header__links--search img {
+  width: 2em;
+  height: 2em;
+}
+
+
 
 .header__menu {
-
-}
-.header__menu ul {
+  width: 100%;
+  height: 2.8em;
+  display: flex;
+  flex-direction: row;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-.header__menu ul li {
-  font-family: 'Lato';
-  font-size: 18px;
+
+.header__menu li {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
 }
