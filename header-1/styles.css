@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed:wght@400;700&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+  grid-template-rows: 50px 40px;
+}
+.header-container {
+  display: grid;
+  width: 100%;
+  height: 50px;
+  grid-row: 1;
+  align-content: center;
+  background-color: #202020;
+  border-bottom: 1px solid #393939;
+  grid-template-columns: 0.7fr 220px 5fr 170px 50px 0.7fr;
+  grid-template-areas: 'space1 login logo mastercard search space2';
+}
+
+.header-space1 {
+  /* background-color: yellow; */
+  grid-area: space1;
+  height: 50px;
+}
+.header-space2 {
+  /* background-color: thistle; */
+  grid-area: space2;
+  height: 50px;
+}
+.header-menu {
+  display: none;
+}
+.header-login {
+  grid-area: login;
+  display: grid;
+
+  max-width: 180px;
+  height: 50px;
+  grid-template-columns: 0.6fr 0.1fr 0.3fr;
+  grid-template-areas: 'sigin space join';
+}
+.header-login .sigin {
+  grid-area: sigin;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 53px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+  border-left: 1px solid #393939;
+}
+
+.header-login .sigin img {
+  margin-right: 8px;
+}
+
+.header-login .space {
+  grid-area: space;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 10px;
+  font-family: 'Lato';
+  color: white;
+  /* background-color: fuchsia; */
+}
+.header-login .join {
+  grid-area: join;
+  display: flex;
+  align-items: center;
+  height: 53px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+  border-right: 1px solid #393939;
+}
+
+.header-logo {
+  /* background-color: darkslateblue; */
+  justify-self: center;
+  align-self: center;
+  height: 50px;
+  grid-area: logo;
+}
+.header-mastercard {
+  /* background-color: yellowgreen; */
+  grid-area: mastercard;
+  width: 140px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.2em;
+  border-right: 1px solid #393939;
+  border-left: 1px solid #393939;
+}
+
+.header-mastercard h3 {
+  width: 100%;
+  height: 50px;
+  font-family: 'Roboto Condensed';
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.header-search {
+  /* background-color: blueviolet; */
+  grid-area: search;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 1px solid #393939;
+}
+
+.header-options {
+  grid-row: 2;
+  justify-self: center;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-options ul {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  min-width: 45em;
+}
+.header-options li {
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+
+.videos:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+
+.char:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+.comics:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+.movies:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+.shows:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+.games:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+.news:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+.more:hover {
+  margin-top: -4px;
+  margin-bottom: -6px;
+  border-bottom: 3px solid red;
+}
+
+.header-options li a {
+  font-family: 'Roboto Condensed';
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  .header {
+    grid-template-rows: 50px;
+  }
+  .header-container {
+    height: 50px;
+    grid-row: 1;
+    grid-template-columns: 30px 5fr 30px;
+    grid-template-areas: 'menu logo search';
+  }
+  .header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    grid-area: menu;
+  }
+  .header-search img {
+    height: 30px;
+    width: 20px;
+    margin-right: 3.5em;
+  }
+  .header .header-login {
+    display: none;
+  }
+  .header-space1 {
+    display: none;
+  }
+  .header-mastercard {
+    display: none;
+  }
+
+  .header-space2 {
+    display: none;
+  }
+  .header-options {
+    display: none;
+  }
+}
